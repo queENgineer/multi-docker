@@ -14,9 +14,9 @@ after_success:
     - docker build -t tgbkrkmz/multi-server ./server
     - docker build -t tgbkrkmz/multi-worker ./worker
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --pasword-stdin
-    - docker push tgbkrkmz/multi-client ./client
-    - docker push tgbkrkmz/multi-nginx ./nginx
-    - docker push tgbkrkmz/multi-server ./server
-    - docker push tgbkrkmz/multi-worker ./worker
+    - docker push tgbkrkmz/multi-client
+    - docker push tgbkrkmz/multi-nginx
+    - docker push tgbkrkmz/multi-server
+    - docker push tgbkrkmz/multi-worker
     
     
