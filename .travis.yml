@@ -19,6 +19,7 @@ after_success:
     - docker push tgbkrkmz/multi-server
     - docker push tgbkrkmz/multi-worker
 
+    
     deploy:
         edge: true
         provider: elasticbeanstalk
@@ -31,4 +32,3 @@ after_success:
             branch: master
         access_key_id: $AWS_ACCESS_KEY
         secret_access_key: $AWS_SECRET_KEY
-        
