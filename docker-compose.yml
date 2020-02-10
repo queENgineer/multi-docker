@@ -24,7 +24,7 @@ services:
             - REDIS_POST=6379  
             - PGUSER=postgres
             - PGHOST=postgres
-            - PGDATABASE=postgres
+            - PGDATABASE=postgresNode
             - PGPASSWORD=postgres_password
             - PGPORT=5432
         depends_on: 
