@@ -5,22 +5,19 @@
             "name": "client",
             "image": "tgbkrkmz/multi-client",
             "hostname": "client",
-            "essential": true,
-            "memory": 128
+            "essential": true
         },
         {
             "name": "server",
             "image": "tgbkrkmz/multi-server",
             "hostname": "api",
-            "essential": false,
-            "memory": 128
+            "essential": false
         },
         {
             "name": "worker",
             "image": "tgbkrkmz/multi-worker",
             "hostname": "worker",
-            "essential": false,
-            "memory": 128
+            "essential": false
         },
         {
             "name": "nginx",
@@ -31,8 +28,7 @@
                     "hostPort": 80,
                     "container": 80
             }],
-            "links":[ "client" , "server" ],
-            "memory": 128
+            "links":[ "client" , "server" ]
         }
 
     ]
